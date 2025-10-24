@@ -1,0 +1,15 @@
+#intent-block-container {
+    border: 3px dashed red;
+    background-color: #fefefe;
+    padding: 20px;
+    margin: 15px 0;
+    text-align: center;
+    min-height: 75px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+#intent-block-container .loading-message {
+    color: #999;
+    font-style: italic;
+}

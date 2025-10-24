@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+ Copyright (c) Vaimo Group. All rights reserved.
+ See LICENSE_VAIMO.txt for license details.
+-->
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+
+    <table name="vaimo_intent_sessions" resource="default" engine="innodb" comment="Intent Predictor Session Data">
+        <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false" identity="true" comment="Entity ID"/>
+        <column xsi:type="varchar" name="session_id" nullable="false" length="64" comment="Session ID"/>
+        <column xsi:type="int" name="customer_id" nullable="true" comment="Customer ID"/>
+        <column xsi:type="smallint" name="pages_viewed" nullable="false" default="0" comment="Pages Viewed"/>
+        <column xsi:type="int" name="time_spent" nullable="false" default="0" comment="Time Spent (seconds)"/>
+        <column xsi:type="boolean" name="added_to_cart" nullable="false" default="0" comment="Added to Cart"/>
+        <column xsi:type="int" name="intent_score" nullable="false" default="0" comment="Calculated Intent Score"/>
+        <column xsi:type="timestamp" name="created_at" on_update="false" nullable="false" default="CURRENT_TIMESTAMP" comment="Created At"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+        <index referenceId="VAIMO_INTENT_SESSIONS_SESSION_ID" indexType="btree">
+            <column name="session_id"/>
+        </index>
+    </table>
+</schema>

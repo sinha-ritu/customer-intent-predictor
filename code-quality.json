@@ -1,0 +1,7 @@
+{
+    "enabled": true,
+    "preset": "vcq_jde",
+    "types": [
+        "phpcs"
+    ]
+}

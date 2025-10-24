@@ -1,0 +1,45 @@
+{
+    "name": "vaimo/module-customer-intent-predictor",
+    "description": "Predict visitor purchase intent (low / medium / high) in real time based on on-site actions.",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "version": "dev-main",
+    "require": {
+        "php": ">=8.2.0",
+        "magento/framework": "103.0.*",
+        "magento/magento-composer-installer": "*"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+            "src/registration.php"
+        ],
+        "psr-4": {
+            "Vaimo\\IntentPredictor\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vaimo\\IntentPredictor\\Test\\": "test"
+        }
+    },
+    "keywords": [
+        "automation"
+    ],
+    "config": {
+        "allow-plugins": {
+            "magento/magento-composer-installer": true,
+            "magento/inventory-composer-installer": true,
+            "magento/composer-dependency-version-audit-plugin": false,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "laminas/laminas-dependency-plugin": false,
+            "vaimo/*": true
+        }
+    },
+    "authors": [
+        {
+            "name": "Ritu Sinha",
+            "email": "ritu.sinha@vaimo.com"
+        }
+    ]
+}

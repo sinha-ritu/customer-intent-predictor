@@ -1,0 +1,33 @@
+<!--
+ Copyright (c) Vaimo Group. All rights reserved.
+ See LICENSE_VAIMO.txt for license details.
+-->
+<div class="admin__data-grid-wrap">
+    <h2>Intent Predictor Analytics</h2>
+    <canvas id="intentChart" width="400" height="200"></canvas>
+</div>
+<script>
+    require(['jquery'], function($) {
+        $(function() {
+            require(['chartjs'], function(Chart) {
+                const ctx = document.getElementById('intentChart').getContext('2d');
+                const data = JSON.parse('<?= $block->escapeJs($block->getIntentData()) ?>');
+                console.log(data);
+                const labels = data.map(i => i.intent_type);
+                const scores = data.map(i => i.score);
+
+                new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Intent Scores',
+                            data: scores
+                        }]
+                    },
+                    options: { responsive: true }
+                });
+            });
+        });
+    });
+</script>

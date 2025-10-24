@@ -1,0 +1,23 @@
+<!--
+ Copyright (c) Vaimo Group. All rights reserved.
+ See LICENSE_VAIMO.txt for license details.
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Vaimo_IntentPredictor::css/intent-block.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content.top">
+        <block class="Magento\Framework\View\Element\Template"
+               name="vaimo.intent.blocks"
+               template="Vaimo_IntentPredictor::intent_blocks.phtml"
+               before="-" />
+        </referenceContainer>
+        <referenceContainer name="before.body.end">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="vaimo.intent.tracker"
+                   template="Vaimo_IntentPredictor::tracker.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

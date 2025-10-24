@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+ Copyright (c) Vaimo Group. All rights reserved.
+ See LICENSE_VAIMO.txt for license details.
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Menu/etc/menu.xsd">
+    <menu>
+        <add id="Vaimo_IntentPredictor::menu"
+             title="Intent Predictor"
+             module="Vaimo_IntentPredictor"
+             sortOrder="80"
+             resource="Vaimo_IntentPredictor::menu"
+             parent="Magento_Backend::content"/>
+        <add id="Vaimo_IntentPredictor::sessions"
+             title="Session Analytics"
+             module="Vaimo_IntentPredictor"
+             sortOrder="10"
+             parent="Vaimo_IntentPredictor::menu"
+             resource="Vaimo_IntentPredictor::sessions"
+             action="intent/intent/index"/>
+    </menu>
+</config>
