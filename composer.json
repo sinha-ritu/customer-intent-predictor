@@ -32,14 +32,13 @@
             "magento/inventory-composer-installer": true,
             "magento/composer-dependency-version-audit-plugin": false,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "laminas/laminas-dependency-plugin": false,
-            "vaimo/*": true
+            "laminas/laminas-dependency-plugin": false
         }
     },
     "authors": [
         {
             "name": "Ritu Sinha",
-            "email": "ritu.sinha@vaimo.com"
+            "email": "ritu.sinha.be@gmail.com"
         }
     ]
 }

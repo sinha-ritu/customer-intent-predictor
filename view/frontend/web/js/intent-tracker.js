@@ -12,12 +12,12 @@ define(['jquery', 'mage/url'], function ($, urlBuilder) {
 
     // --- State Tracking ---
     let startTime = Date.now();
-    let pageViews = parseInt(sessionStorage.getItem('vaimo_intent_pageviews') || '0', 10);
+    let pageViews = parseInt(sessionStorage.getItem('sinhar_intent_pageviews') || '0', 10);
     let addedToCart = false;
 
     // Increment page view count
     pageViews++;
-    sessionStorage.setItem('vaimo_intent_pageviews', pageViews);
+    sessionStorage.setItem('sinhar_intent_pageviews', pageViews);
 
     // --- Helper: Compute time spent ---
     function getTimeSpentSeconds() {
@@ -68,7 +68,7 @@ define(['jquery', 'mage/url'], function ($, urlBuilder) {
     }, 5 * 60 * 1000); // every 60s
 
     // Expose public API (for debugging or future integration)
-    window.VaimoIntentTracker = {
+    window.SinhaRIntentTracker = {
         send: sendIntentData,
         getStats: function () {
             return {

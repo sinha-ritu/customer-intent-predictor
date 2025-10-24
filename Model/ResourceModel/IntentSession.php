@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace Vaimo\IntentPredictor\Model\ResourceModel;
+namespace SinhaR\IntentPredictor\Model\ResourceModel;
 
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 
@@ -19,6 +19,6 @@ class IntentSession extends AbstractDb
 {
     protected function _construct()
     {
-        $this->_init('vaimo_intent_sessions', 'entity_id');
+        $this->_init('sinhar_intent_sessions', 'entity_id');
     }
 }

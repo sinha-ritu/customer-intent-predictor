@@ -11,11 +11,11 @@
 
 declare(strict_types=1);
 
-namespace Vaimo\IntentPredictor\Model\ResourceModel\IntentSession;
+namespace SinhaR\IntentPredictor\Model\ResourceModel\IntentSession;
 
 use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
-use Vaimo\IntentPredictor\Model\IntentSession as Model;
-use Vaimo\IntentPredictor\Model\ResourceModel\IntentSession as ResourceModel;
+use SinhaR\IntentPredictor\Model\IntentSession as Model;
+use SinhaR\IntentPredictor\Model\ResourceModel\IntentSession as ResourceModel;
 
 class Collection extends AbstractCollection
 {

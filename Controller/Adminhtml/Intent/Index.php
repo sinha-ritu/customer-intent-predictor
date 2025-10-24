@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace Vaimo\IntentPredictor\Controller\Adminhtml\Intent;
+namespace SinhaR\IntentPredictor\Controller\Adminhtml\Intent;
 
 use Magento\Backend\App\Action;
 use Magento\Framework\View\Result\PageFactory;
@@ -28,7 +28,7 @@ class Index extends Action
     public function execute()
     {
         $resultPage = $this->resultPageFactory->create();
-        $resultPage->setActiveMenu('Vaimo_IntentPredictor::menu');
+        $resultPage->setActiveMenu('SinhaR_IntentPredictor::menu');
         $resultPage->getConfig()->getTitle()->prepend(__('Intent Predictor Analytics'));
         return $resultPage;
     }

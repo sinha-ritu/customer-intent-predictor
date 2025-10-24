@@ -1,6 +1,6 @@
 var config = {
     paths: {
-        'chartjs': 'Vaimo_IntentPredictor/js/chart'
+        'chartjs': 'SinhaR_IntentPredictor/js/chart'
     },
     shim: {
         'chartjs': {

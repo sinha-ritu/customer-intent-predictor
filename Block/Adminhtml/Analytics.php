@@ -11,12 +11,12 @@
 
 declare(strict_types=1);
 
-namespace Vaimo\IntentPredictor\Block\Adminhtml;
+namespace SinhaR\IntentPredictor\Block\Adminhtml;
 
 use Magento\Backend\Block\Template;
 use Magento\Framework\Serialize\Serializer\Json;
-use Vaimo\IntentPredictor\Model\IntentSession;
-use Vaimo\IntentPredictor\Model\ResourceModel\IntentSession\CollectionFactory;
+use SinhaR\IntentPredictor\Model\IntentSession;
+use SinhaR\IntentPredictor\Model\ResourceModel\IntentSession\CollectionFactory;
 
 class Analytics extends Template
 {

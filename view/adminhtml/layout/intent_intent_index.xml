@@ -12,9 +12,9 @@
       layout="admin-2columns-left">
     <body>
         <referenceContainer name="content">
-            <block class="Vaimo\IntentPredictor\Block\Adminhtml\Analytics"
+            <block class="SinhaR\IntentPredictor\Block\Adminhtml\Analytics"
                    name="intent.analytics"
-                   template="Vaimo_IntentPredictor::analytics.phtml"/>
+                   template="SinhaR_IntentPredictor::analytics.phtml"/>
         </referenceContainer>
     </body>
 </page>
