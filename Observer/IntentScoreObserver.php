@@ -1,11 +1,17 @@
 <?php
 /**
- * Copyright © Vaimo Group. All rights reserved.
- * See LICENSE_VAIMO.txt for license details.
+ * Copyright © 2025 Ritu Sinha
+ *
+ * This source code is licensed under the MIT license
+ * that is bundled with this package in the file LICENSE.
+ *
+ * You are free to use, modify, and distribute this software
+ * in accordance with the terms of the MIT License.
  */
+
 declare(strict_types=1);
 
-namespace Vaimo\IntentPredictor\Observer;
+namespace SinhaR\IntentPredictor\Observer;
 
 use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;

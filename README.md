@@ -15,12 +15,12 @@ This Magento 2 module analyzes customer browsing behavior to calculate an 'inten
 
 1.  Install the module via Composer:
     ```bash
-    composer require vaimo/module-intent-predictor
+    composer require sinhar/module-intent-predictor
     ```
 
 2.  Enable the module and run the setup scripts:
     ```bash
-    bin/magento module:enable Vaimo_IntentPredictor
+    bin/magento module:enable SinhaR_IntentPredictor
     bin/magento setup:upgrade
     bin/magento setup:di:compile
     bin/magento setup:static-content:deploy

@@ -1,15 +1,21 @@
 <?php
 /**
- * Copyright © Vaimo Group. All rights reserved.
- * See LICENSE_VAIMO.txt for license details.
+ * Copyright © 2025 Ritu Sinha
+ *
+ * This source code is licensed under the MIT license
+ * that is bundled with this package in the file LICENSE.
+ *
+ * You are free to use, modify, and distribute this software
+ * in accordance with the terms of the MIT License.
  */
+
 declare(strict_types=1);
 
-namespace Vaimo\IntentPredictor\Model;
+namespace SinhaR\IntentPredictor\Model;
 
 use Magento\Framework\Event\ManagerInterface;
-use Vaimo\IntentPredictor\Model\IntentSessionFactory;
-use Vaimo\IntentPredictor\Model\ResourceModel\IntentSession\CollectionFactory;
+use SinhaR\IntentPredictor\Model\IntentSessionFactory;
+use SinhaR\IntentPredictor\Model\ResourceModel\IntentSession\CollectionFactory;
 
 class Scoring
 {
@@ -61,7 +67,7 @@ class Scoring
 
         // 🔥 Dispatch event
         $this->eventManager->dispatch(
-            'vaimo_intentpredictor_score_updated',
+            'sinhar_intentpredictor_score_updated',
             [
                 'intent_score' => $intent,
                 'session_id' => $sessionId

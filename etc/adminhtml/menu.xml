@@ -1,23 +1,28 @@
 <?xml version="1.0"?>
 <!--
- Copyright (c) Vaimo Group. All rights reserved.
- See LICENSE_VAIMO.txt for license details.
+  Copyright © 2025 Ritu Sinha
+
+  This source code is licensed under the MIT license
+  that is bundled with this package in the file LICENSE.
+
+  You are free to use, modify, and distribute this software
+  in accordance with the terms of the MIT License.
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:Menu/etc/menu.xsd">
     <menu>
-        <add id="Vaimo_IntentPredictor::menu"
+        <add id="SinhaR_IntentPredictor::menu"
              title="Intent Predictor"
-             module="Vaimo_IntentPredictor"
+             module="SinhaR_IntentPredictor"
              sortOrder="80"
-             resource="Vaimo_IntentPredictor::menu"
+             resource="SinhaR_IntentPredictor::menu"
              parent="Magento_Backend::content"/>
-        <add id="Vaimo_IntentPredictor::sessions"
+        <add id="SinhaR_IntentPredictor::sessions"
              title="Session Analytics"
-             module="Vaimo_IntentPredictor"
+             module="SinhaR_IntentPredictor"
              sortOrder="10"
-             parent="Vaimo_IntentPredictor::menu"
-             resource="Vaimo_IntentPredictor::sessions"
+             parent="SinhaR_IntentPredictor::menu"
+             resource="SinhaR_IntentPredictor::sessions"
              action="intent/intent/index"/>
     </menu>
 </config>
