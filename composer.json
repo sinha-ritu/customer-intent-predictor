@@ -40,5 +40,11 @@
             "name": "Ritu Sinha",
             "email": "ritu.sinha.be@gmail.com"
         }
-    ]
+    ],
+    "repositories": {
+      "private-packagist": {
+        "type": "composer",
+        "url": "https://repo.magento.com/"
+      }
+    }
 }
